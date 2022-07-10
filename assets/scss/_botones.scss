@@ -1,0 +1,32 @@
+.boton {
+    background-color: chartreuse;
+    color: black;
+    border-radius: 2px solid black;
+
+    &:hover {
+        filter: opacity(75%);
+    }
+}
+
+.botonPiso {
+    @extend .boton;
+    background-color: orangered;
+    color: chartreuse;
+}
+
+.botonDeco {
+    @extend .boton;
+    background-color: yellow;
+    color: blue;
+}
+
+.botonPlaza {
+    background-color: seagreen;
+    color: white;
+}
+
+.botonAgarre {
+    @extend .boton;
+    background-color: fuchsia;
+    color:aqua;
+}

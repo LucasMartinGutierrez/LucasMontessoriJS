@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Red+Hat+Mono:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+main {
+    color: rgb(255, 255, 255);
+    margin: 0 auto;
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 150px 35px 1fr 1fr 100px;
+    grid-template-areas:
+        "my-header my-header my-header"
+        "my-nav my-nav my-nav"
+        "my-section1 my-section1 my-section1"
+        "my-section my-section my-section"
+        "my-footer my-footer my-footer"
+}
+
+.main__contacto{
+    color: rgb(255, 255, 255);
+    margin: 0 auto;
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 150px 35px 1fr 1fr 100px;
+    grid-template-areas:
+        "my-header my-header my-header"
+        "my-nav my-nav my-nav"
+        "my-section1 my-section1 my-section1"
+        "my-section my-section my-section"
+        "my-footer my-footer my-footer"
+}
+
+header {
+    grid-area: my-header;
+    color: black;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+}
+
+.header__contacto {
+    grid-area: my-header;
+    color: black;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+}
+
+nav {
+    grid-area: my-nav;
+    background-color: #fff280;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.nav__contacto {
+    grid-area: my-nav;
+    background-color: #fff280;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: #25caaf9c;
+    cursor: pointer;
+}
+
+
+h2 {
+    padding: 20px;
+    color: #fff280;    
+}
+
+
+
+h3 {
+    font-size: 2em;
+    text-align: center;
+
+}
+
+p {
+    font-size: 18px;
+}
+
+#nuestrosproductos {
+    background-color: #25caaf9c;
+    background-image: linear-gradient(#25caaf9c, #2af07d);
+    color: #fff280;
+    text-align: center;
+    justify-content: center;
+    margin: 0;
+
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+
+}
+
+.productos {
+    display: grid;
+    grid-template-columns: 400px 400px 400px;
+    grid-gap: 30px;
+    padding: 10px 10px;
+    padding-top: 20px;
+    
+}
+
+.cartas {
+    text-align: justify;
+    
+}
+
+
+
+button {
+    font-size: 15px;
+    font-weight: bold;
+    padding: 10px 10px;
+    border-radius: 10px;
+    background-color: #ffa36d;
+    transition: width 2s;
+}
+
+button:hover {
+    text-align: center;
+    height: 80px;
+    box-shadow: inset;
+}
+
+
+
+section {
+    grid-area: my-section;
+    background-color: rgb(75, 0, 130);
+    margin: 0;
+}
+
+footer {
+    grid-area: my-footer;
+    background-color: darkorchid;
+    margin: 0;
+    background-color: coral;
+}
+
+.footer__contacto {
+    grid-area: my-footer;
+    background-color: darkorchid;
+    margin-top: 4px;
+    background-color: coral;
+}
+
+.copy{
+    text-align: center;
+    margin: 0;
+    padding: 5px;
+}
+.nav__Footer {
+    
+    display: flex;
+        
+}
+ul {
+    background-color: #fff280;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+li{
+    padding: 30px;
+    text-decoration:double;
+    list-style: none;
+}
+
+footer .container {
+    justify-content: flex-end;
+}
+.formula {
+
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 50vh;
+    background-image: linear-gradient(#ffffff, #e6e20d);
+}
+
+.form {
+    margin-top: 20px;
+    background-image: linear-gradient(#ffffff, #e6e20d);
+    border-radius: 20px;
+    padding: 0.5em 1.5em;
+
+}
+
+@media (min-width: 720px) and (max-width: 1000px) {
+    main {
+        grid-template-columns: 200px 1fr 200px;
+        grid-template-rows: 150px 35px 1fr 100px;
+        grid-template-areas:
+            "my-header my-header my-header"
+            "my-nav my-nav my-nav"
+            "my-section my-section my-section"
+            "my-footer my-footer my-footer"
+    }
+} 
+
+@media (min-width: 1001px) {
+    main {
+        grid-template-columns: 200px 1fr 200px;
+        grid-template-rows: 200px 35px 1fr 100px;
+        grid-template-areas:
+            "my-header my-header my-header"
+            "my-nav my-nav my-nav"
+            "my-section my-section my-section"
+            "my-footer my-footer my-footer"
+    }
+}
