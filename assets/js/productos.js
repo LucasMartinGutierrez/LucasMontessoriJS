@@ -148,3 +148,4 @@ do {
     }
 
 } while ( opcion != "5" )
+console.log(document);
