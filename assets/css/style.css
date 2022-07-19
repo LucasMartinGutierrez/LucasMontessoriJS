@@ -46,7 +46,11 @@ main {
   display: grid;
   grid-template-columns: 100%;
   grid-template-rows: 150px 35px 1fr 1fr 100px;
-  grid-template-areas: "my-header my-header my-header" "my-nav my-nav my-nav" "my-section1 my-section1 my-section1" "my-section my-section my-section" "my-footer my-footer my-footer"; }
+  grid-template-areas: "my-header my-header my-header"
+ "my-nav my-nav my-nav"
+ "my-section1 my-section1 my-section1"
+ "my-section my-section my-section"
+ "my-footer my-footer my-footer"; }
   main header {
     grid-area: my-header;
     color: black;
@@ -202,10 +206,23 @@ footer .container {
   main {
     grid-template-columns: 200px 1fr 200px;
     grid-template-rows: 150px 35px 1fr 100px;
-    grid-template-areas: "my-header my-header my-header" "my-nav my-nav my-nav" "my-section my-section my-section" "my-footer my-footer my-footer"; } }
+    grid-template-areas: "my-header my-header my-header"
+ "my-nav my-nav my-nav"
+ "my-section my-section my-section"
+ "my-footer my-footer my-footer"; } }
 
 @media (min-width: 1001px) {
   main {
     grid-template-columns: 200px 1fr 200px;
     grid-template-rows: 200px 35px 1fr 100px;
-    grid-template-areas: "my-header my-header my-header" "my-nav my-nav my-nav" "my-section my-section my-section" "my-footer my-footer my-footer"; } }
+    grid-template-areas: "my-header my-header my-header"
+ "my-nav my-nav my-nav"
+ "my-section my-section my-section"
+ "my-footer my-footer my-footer"; } }
+
+ #botones {
+  display: inline;
+
+ }
+
+ 
